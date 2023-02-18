@@ -9,10 +9,20 @@
     <title>Document</title>
 </head>
 <body>
-    <svg width="200" height="200" viewbox="0 0 200 200" fill="none" xmlns="https://www.w3.org/2000/svg">
-        <rect class="square" x="50" y="50" height="100" width="100" fill="red"></rect>
-        <circle fill="red" cx="70.71" cy="70.71" r="50"></circle>
-        <circle fill="red" cx="135.36" cy="70.71" r="50"></circle>
-    </svg>
+    <div class="svg-container">
+        <svg class="svg__card clock" width="200" height="200" viewbox="0 0 200 200" fill="none" xmlns="https://www.w3.org/2000/svg">
+            <circle r="80" cx="100" cy="100" fill="none" stroke="black" stroke-width="10"></circle>
+            <polyline points="100,45 100,100 70,100" stroke="black" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"></polyline>
+        </svg>
+        <svg class="svg__card heart" width="200" height="200" viewbox="0 0 200 200" fill="none" xmlns="https://www.w3.org/2000/svg">
+            <rect class="heart__square" x="50" y="50" height="100" width="100"></rect>
+            <circle cx="68" cy="68" r="50"></circle>
+            <circle cx="132" cy="68" r="50"></circle>
+        </svg>
+        <svg class="svg__card envelope" width="200" height="200" viewbox="0 0 200 200" fill="none" xmlns="https://www.w3.org/2000/svg">
+            <rect width="160" height="110" x="20" y="40" fill="none" stroke="black" stroke-width="10" stroke-linejoin="round"></rect>
+            <polyline points="20,40 100,100 180,40" stroke="black" stroke-width="10" ></polyline>
+        </svg>
+    </div>
 </body>
 </html>
