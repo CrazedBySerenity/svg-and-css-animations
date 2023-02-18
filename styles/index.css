@@ -1,4 +1,24 @@
-.square {
+.svg-container {
+    display:flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.svg__card {
+    margin-right: 80px;
+}
+
+.heart {
+    fill: red;
+    transition: all 0.3s ease-in-out;
+}
+
+.heart:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.heart__square {
     transform-origin: center;
     transform: rotate(45deg);
 }
