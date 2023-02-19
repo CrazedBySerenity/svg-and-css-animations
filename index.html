@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/normalize.css" rel="stylesheet">
     <link href="styles/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <title>Document</title>
 </head>
 <body>
     <div class="svg-container">
-        <svg class="svg__card clock" width="200" height="200" viewbox="0 0 200 200" fill="none" xmlns="https://www.w3.org/2000/svg">
+        <svg class="svg__card clock animate__animated animate__tada animate__infinite animate__slower" width="200" height="200" viewbox="0 0 200 200" fill="none" xmlns="https://www.w3.org/2000/svg">
             <circle r="80" cx="100" cy="100" fill="none" stroke="black" stroke-width="10"></circle>
             <polyline points="100,45 100,100 70,100" stroke="black" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"></polyline>
         </svg>
@@ -19,9 +21,12 @@
             <circle cx="68" cy="68" r="50"></circle>
             <circle cx="132" cy="68" r="50"></circle>
         </svg>
-        <svg class="svg__card envelope" width="200" height="200" viewbox="0 0 200 200" fill="none" xmlns="https://www.w3.org/2000/svg">
-            <rect width="160" height="110" x="20" y="40" fill="none" stroke="black" stroke-width="10" stroke-linejoin="round"></rect>
-            <polyline points="20,40 100,100 180,40" stroke="black" stroke-width="10" ></polyline>
+        <svg class="svg__card envelope" width="200" height="200" viewbox="0 0 200 200" 
+        fill="none" xmlns="https://www.w3.org/2000/svg">
+            <rect width="160" height="110" x="20" y="70" fill="none" stroke="black" stroke-width="10" stroke-linejoin="round"></rect>
+            <polyline points="20,70 100,130 180,70" stroke="black" stroke-width="10" fill="white"></polyline>
+            <polyline class="envelope__open-lid" points="20,71 100,10 180,71" stroke="black" stroke-width="10" fill="white"></polyline>
+            <polyline class="envelope__closed-lid" points="20,71 180,71" stroke="black" stroke-width="10" fill="white"></polyline>
         </svg>
     </div>
 </body>
