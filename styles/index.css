@@ -8,6 +8,10 @@
     margin-right: 80px;
 }
 
+.clock:hover {
+    animation: none;
+}
+
 .heart {
     fill: red;
     transition: all 0.3s ease-in-out;
@@ -21,4 +25,42 @@
 .heart__square {
     transform-origin: center;
     transform: rotate(45deg);
+}
+
+.envelope__closed-lid {
+    opacity: 100%;
+}
+
+.envelope__open-lid {
+    opacity: 0%;
+}
+
+.envelope:hover .envelope__closed-lid{
+    opacity: 100%;
+    animation: envelope-anim-fade-out 0.4s;
+    animation-fill-mode: forwards;
+}
+
+.envelope:hover .envelope__open-lid{
+    opacity: 0%;
+    animation: envelope-anim-fade-in 0.4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes envelope-anim-fade-out{
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+@keyframes envelope-anim-fade-in{
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
 }
