@@ -4,8 +4,55 @@
     margin-top: 50px;
 }
 
+.svg-container__small {
+    display: flex;
+    flex-direction: column;
+}
+.clock-container .icon{
+    opacity: 0%;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.clock-container:hover .icon{
+    opacity: 100%;
+    transition: all 0.2s ease-in-out;
+}
+
+.heart-container .icon{
+    opacity: 0%;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.heart-container:hover .icon{
+    opacity: 100%;
+    transition: all 0.2s ease-in-out;
+}
+
+.envelope-container .icon{
+    opacity: 0%;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.envelope-container:hover .icon{
+    opacity: 100%;
+    transition: all 0.2s ease-in-out;
+}
+
 .svg__card {
     margin-right: 80px;
+}
+
+
+.icon {
+    width: 200px;
+    fill: none;
+}
+
+.icon--flipped {
+    transform: scaleX(-1);
 }
 
 .clock:hover {
